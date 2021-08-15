@@ -1,0 +1,2 @@
+class + class: se css toi thang dung  sau nó(neu cách nó thì k dc)
+class ~ class: se css toi toàn bo th dung sau nó
