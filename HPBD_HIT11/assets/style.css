@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.audio-web {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    margin-bottom: 16px;
+}
+
+.border-right {
+    border-right: solid 1px black;
+}
+
+.transfer-slide {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 16px;
+}
+
+.transfer-slide a {
+    font-size: 32px;
+    text-decoration: none;
+    transition: all 5s;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    /* rgb(252, 188, 71) */
+}
+
+.header-descript {
+    display: flex;
+}
+
+.header-descript p {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Mrs Saint Delafield", cursive;
+}
+
+.text-descript {
+    padding: 0 42px;
+}
+
+.intro-birthday {
+    height: 91vh;
+    background-color: #f47c2a;
+    position: relative;
+}
+
+.bg-club {
+    position: relative;
+}
+
+.image-hpbd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(0,0,0,0.3);
+}
+
+.box-image {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1200px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1200px) rotateY(360deg);
+    }
+}
+
+.box-image span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(432px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgb(0,0,0,0.2));
+}
+
+.box-image span img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.about-HIT {
+    padding: 36px 0;
+    height: 100vh;
+    position: relative;
+}
+
+.about-HIT .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-HIT {
+    text-align: center;
+}
+
+.leaders-HIT {
+    width: 100%;
+    display: flex;
+    margin: 32px 0;
+}
+
+.leader {
+    width: 33.33333%;
+    padding: 0 16px;
+}
+
+.wrap-leader {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 40%);
+    transition: all 0.5s;
+}
+
+.wrap-leader:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 40%);
+}
+
+.leader-image {
+    width: 100%;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.info-leader {
+    background-color: #f47c2a;
+    padding: 16px 12px;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.leader-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.image-birthday {
+    margin-top: 32px;
+}
+
+.video-bg {
+    position: relative;
+}
+
+.video-background {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.wishes-hpbd {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f47c2a;
+    padding: 32px 0;
+}
+
+.wishes-hpbd .container {
+    width: 80%;
+    padding: 64px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.wish-text {
+    padding: 24px;
+    width: 40%;
+    color: #fff;
+    background-color: #ff9a57;
+    border: solid 1px orange;
+    border-radius: 3px;
+    font-family: "Mrs Saint Delafield", cursive;
+}
+
+.image-cake {
+    width: 60%;
+    text-align: center;
+}
+
+.image-cake img {
+    height: 100%;
+    float: right;
+    animation: animate-img-cake 5s ease-in-out infinite;
+    border: solid 6px #fff;
+}
+
+@keyframes animate-img-cake {
+    0% {
+        transform: translate(0, -10%);
+    }
+    50% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(0, -10%);
+    }  
+}
+
+.input-wish {
+    padding: 0 64px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-wish input {
+    width: 60%;
+    margin: 12px 0;
+    padding: 12px 24px;
+    
+}
+
+.input-wish .btn {
+    display: block;
+    padding: 8px 24px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.input-wish .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+}
