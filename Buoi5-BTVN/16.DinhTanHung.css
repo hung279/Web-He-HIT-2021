@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+  
+body {
+  background: url('https://tranduong3701.github.io/my-site/assets/img/bgg.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+  
+ul {
+  list-style: none;
+}
+  
+a {
+  text-decoration: none;
+  color: #fff;
+}
+  
+.text-white, .nav-menu a:hover {
+  color: #fff;
+}
+
+.margin-bottom-16px {
+    margin-bottom: 16px;
+}
+
+.mg-top-bot-16px {
+    margin: 16px 0;
+}
+
+.mg-top-bot-8px {
+    margin: 8px 0;
+}
+
+/* .text-green {
+    color: #18d26e;
+} */
+
+.d-flex {
+  display: flex;
+}
+  
+.flex-direction-column {
+  flex-direction: column;
+}
+  
+.justify-content-centre {
+  justify-content: center;
+}
+  
+.align-items-center {
+  align-items: center;
+}
+  
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.grid-gap-40px {
+  grid-gap: 40px;
+}
+
+#header {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container-h {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-h h1 {
+    font-size: 36px;
+}
+
+.nav-menu a {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-menu .active {
+    opacity: 1;
+}
+
+.nav-menu .active::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    left: 0;
+    bottom: -5px;
+    background-color: #18d26e;
+}
+
+.nav-menu a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: -5px;
+    background-color: #18d26e;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    opacity: 1;
+}
+
+.nav-menu a:hover::before {
+    width: 70%;
+}
+
+.container {
+    width: 1140px;
+    margin: 100px auto auto;
+    background-color: rgba(0,0,0,0.3);
+    padding: 30px;
+    margin-bottom: 48px;
+}
+
+.title-wrap {
+    margin-top: -16px;
+    margin-bottom: 16px;
+}
+
+.title-wrap p {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.resume-wrap {
+    margin: 0 -16px;
+}
+
+.resume-list {
+    width: 50%;
+    padding: 0 16px;
+}
+
+.resume-title {
+    font-size: 26px;
+}
+
+.resume-content {
+    padding-left: 16px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.pd-bot-16px {
+    padding-bottom: 16px;
+}
+
+.resume-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #18d26e;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.resume-content ul {
+    list-style: disc;
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+.resume-content ul li {
+    margin-bottom: 8px;
+}
+
+.resume-content p {
+    margin-bottom: 8px;
+}
+
+.resume-content::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #18d26e;
+    border-radius: 50%;
+    top: 0;
+    left: -9px;
+}
+
+.style-italic {
+    font-style: italic;
+}
+
+.resume-time {
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    font-weight: 500;
+}
