@@ -1,0 +1,87 @@
+@import url("./base.css");
+
+.container {
+  height: 100vh;
+  margin-left: 10%;
+  grid-gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#home h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#home p {
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  margin-top: -12px;
+  opacity: 0.8;
+  border-right: 3px solid;
+  animation: typing 3s steps(35) infinite, blink 0.2s infinite;
+  width: 430px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0px;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.nav-menu a {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-menu .active {
+  opacity: 1;
+}
+
+.nav-menu .active::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  left: 0;
+  bottom: -5px;
+  background-color: #18d26e;
+}
+
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  left: 0;
+  bottom: -5px;
+  background-color: #18d26e;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu a:hover::before {
+  width: 70%;
+}
+
+.social-menu a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 16px;
+  transition: all 0.3s ease-in;
+}
+
+.social-menu a:hover {
+  background-color: #18d26e;
+}
