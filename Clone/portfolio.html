@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header" class="header-top d-flex">
+        <div class="container-h d-flex align-items-center justify-content-space-between">
+            <h1>
+                <a href="">Trần Dương</a>
+            </h1>
+            <div class="nav-menu">
+                <ul class="d-flex grid-gap-40px">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="../Buoi5-Ktra/16.DinhTanHung.html">About</a></li>
+                    <li><a href="../Buoi5-BTVN/16.DinhTanHung.html">Resume</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- web-mobile -->
+        <input type="checkbox" hidden class="nav-input" id="nav-menu-mobile">
+        <label for="nav-menu-mobile" class="nav-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label for="nav-menu-mobile" class="nav-close-btn">
+            <i class="fas fa-times"></i>
+        </label>
+        <div class="nav-mobile">
+            <ul class="">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="../Buoi5-Ktra/16.DinhTanHung.html">About</a></li>
+                <li><a href="../Buoi5-BTVN/16.DinhTanHung.html">Resume</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <label for="nav-menu-mobile" class="overlay"></label>
+        <!-- end-web-mobile -->
+    </header>
+
+    <main class="main">
+        <div class="container-body">
+            <div class="main-title">
+                <p>PORTFOLIO</p>
+                <h2 class="text-white">MY WORKS</h2>
+            </div>
+            <input type="radio" hidden name="filter" class="filter-input-all" id="all">
+            <input type="radio" hidden name="filter" class="filter-input-app" id="app">
+            <input type="radio" hidden name="filter" class="filter-input-card" id="card">
+            <input type="radio" hidden name="filter" class="filter-input-web" id="web">
+            <div class="list-btn">
+                <label for="all" class="active-all">ALL</label>
+                <label for="app" class="active-app">APP</label>
+                <label for="card" class="active-card">CARD</label>
+                <label for="web" class="active-web">WEB</label>
+            </div>
+            <div class="portfolio-container">
+                <div class="portfolio-item app">
+                    <input type="checkbox" hidden name="img" id="open-img-1">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>APP</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-1">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-1.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-1" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-1.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item app">
+                    <input type="checkbox" hidden name="img" id="open-img-2">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>APP</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-2">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-1.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-2" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-1.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item app">
+                    <input type="checkbox" hidden name="img" id="open-img-3">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>APP</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-3">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-1.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-3" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-1.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item card">
+                    <input type="checkbox" hidden name="img" id="open-img-4">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>CARD</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-4">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-2.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-4" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-2.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item card">
+                    <input type="checkbox" hidden name="img" id="open-img-5">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>CARD</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-5">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-2.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-5" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-2.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item card">
+                    <input type="checkbox" hidden name="img" id="open-img-6">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>CARD</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-6">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-2.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-6" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-2.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item web">
+                    <input type="checkbox" hidden name="img" id="open-img-7">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>WEB</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-7">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-3.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-7" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-3.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item web">
+                    <input type="checkbox" hidden name="img" id="open-img-8">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>WEB</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-8">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-3.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-8" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-3.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="portfolio-item web">
+                    <input type="checkbox" hidden name="img" id="open-img-9">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <h3>WEB</h3>
+                            <p class="text-white">Website</p>
+                            <div class="info-link">
+                                <label for="open-img-9">
+                                    <i class="fas fa-plus"></i>
+                                </label>
+                                <a href=""><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <img src="./assets/img/portfolio-3.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <label for="open-img-9" class="overlay-img">
+                        <div class="open-img">
+                            <img src="./assets/img/portfolio-3.jpg" alt="">
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

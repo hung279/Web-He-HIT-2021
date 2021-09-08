@@ -1,0 +1,264 @@
+@import url("./base.css");
+
+.main-title p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #aaaaaa;
+  line-height: 1px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.main-title p::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  position: absolute;
+  right: -120px;
+  background-color: #18d26e;
+}
+
+.main-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.list-btn {
+  display: flex;
+  justify-content: center;
+  grid-gap: 8px;
+  margin: 32px;
+}
+
+.list-btn button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-btn label {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-btn label:hover,
+.active-all,
+.filter-input-app:checked ~ .list-btn .active-app,
+.filter-input-card:checked ~ .list-btn .active-card,
+.filter-input-web:checked ~ .list-btn .active-web {
+  background-color: #18d26e !important;
+}
+
+/* filter image */
+.filter-input-app:checked ~ .portfolio-container .portfolio-item,
+.filter-input-card:checked ~ .portfolio-container .portfolio-item,
+.filter-input-web:checked ~ .portfolio-container .portfolio-item {
+  display: none;
+}
+
+.filter-input-app:checked ~ .portfolio-container .app {
+  display: block;
+}
+
+.filter-input-app:checked ~ .list-btn .active-all,
+.filter-input-card:checked ~ .list-btn .active-all,
+.filter-input-web:checked ~ .list-btn .active-all {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.filter-input-card:checked ~ .portfolio-container .card {
+  display: block;
+}
+
+.filter-input-web:checked ~ .portfolio-container .web {
+  display: block;
+}
+/* end-filter */
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 32px;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  width: 30%;
+  transition: ease-in 0.3s;
+}
+
+.portfolio-wrap {
+  position: relative;
+}
+
+.portfolio-wrap::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  background-color: #0008;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.portfolio-wrap:hover::before,
+.portfolio-wrap:hover .portfolio-info {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  opacity: 1;
+}
+
+.portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+.portfolio-image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.portfolio-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.portfolio-info h3,
+.portfolio-info .info-link {
+  font-size: 20px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.info-link a, .info-link label {
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.info-link a:hover, .info-link label:hover {
+  color: #18d26e;
+}
+
+.portfolio-info::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 35px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-info::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* open-img */
+.overlay-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  display: none;
+  animation: fadeIn linear 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+.open-img {
+  position: absolute;
+  padding: 0 30px;
+}
+
+.open-img img {
+  max-width: 100%;
+}
+
+#open-img-1:checked ~ .overlay-img,
+#open-img-2:checked ~ .overlay-img,
+#open-img-3:checked ~ .overlay-img,
+#open-img-4:checked ~ .overlay-img,
+#open-img-5:checked ~ .overlay-img,
+#open-img-6:checked ~ .overlay-img,
+#open-img-7:checked ~ .overlay-img,
+#open-img-8:checked ~ .overlay-img,
+#open-img-9:checked ~ .overlay-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* reponsive */
+
+/* tablet */
+@media (max-width: 991px) {
+  .portfolio-item {
+    width: 47.57765%;
+  }
+}
+
+/* reponsive mobile */
+@media (max-width: 767px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+}

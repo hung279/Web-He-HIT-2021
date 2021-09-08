@@ -1,0 +1,74 @@
+@import url("./base.css");
+
+.container {
+  height: 100vh;
+  margin-left: 10%;
+  grid-gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#home * {
+  transition: 0.3s ease-in-out;
+}
+
+#home h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#home p {
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  margin-top: -12px;
+  opacity: 0.8;
+  border-right: 3px solid;
+  animation: typing 3s steps(35) infinite, blink 0.2s infinite;
+  width: 430px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0px;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.social-menu a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 16px;
+  transition: all 0.3s ease-in;
+}
+
+.social-menu a:hover {
+  background-color: #18d26e;
+}
+
+/* reponsive */
+ @media (max-width: 991px) {
+  .container {
+    align-items: center;
+    margin: 0;
+  }
+  #home h1 {
+    font-size: 36px;
+  }
+  #home p {
+    font-size: 20px;
+    width: 364px;
+  }
+  .nav-menu {
+    display: none;
+  }
+}

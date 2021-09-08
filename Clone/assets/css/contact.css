@@ -1,0 +1,165 @@
+@import url('base.css');
+
+.contact-title {
+    margin-top: -8px;
+}
+
+.contact-title p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    line-height: 1px;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-title p::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    right: -120px;
+    background-color: #18d26e;
+}
+
+.contact-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.contact-content {
+    grid-gap: 24px 0;
+}
+
+.info {
+    width: 48.5%;
+}
+
+.info-box {
+    display: flex;
+    padding: 20px;
+}
+
+.info-box > i {
+    font-size: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #18d26e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    margin-left: 16px;
+}
+
+.info-text h4 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
+}
+
+.social-link {
+    display: flex;
+    grid-gap: 12px;
+}
+
+.social-link a {
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link a:hover {
+    color: #18d26e;
+}
+
+.form-input {
+    width: 100%;
+    padding: 30px;
+}
+
+.info-box, .form-input {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-input input, .form-input textarea {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.form-input input::placeholder,
+.form-input textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.input-name-email {
+    margin: 0 -4px;
+}
+
+.input-name-email div {
+    width: 50%;
+    padding: 0 4px;
+}
+
+
+.input-name-email div input{
+    width: 100%;
+    padding: 12px 14px;
+    
+}
+
+.input-subject input, .input-message textarea{
+    width: 100%;
+    padding: 12px 14px;
+}
+
+.input-message textarea{
+    font-family: inherit;
+}
+
+.btn-send {
+    text-align: center;
+}
+
+.btn-send button {
+    padding: 12px 28px;
+    font-size: 16px;color: #fff;
+    background-color: #18d26e;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn-send button:hover {
+    background-color: #17be65;
+}
+
+/* reponsive mobile */
+@media (max-width: 767px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .input-name-email {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .input-name-email div {
+        width: 100%;
+    }
+}

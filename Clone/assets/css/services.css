@@ -1,0 +1,78 @@
+@import url('./base.css');
+
+.services-title {
+    margin-top: -16px;
+    margin-bottom: 16px;
+}
+
+.services-title p {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.services-list {
+    margin: 0 -16px;
+    grid-gap: 24px 0;
+}
+
+.services-item {
+    width: 33.33333%;
+    padding: 0 16px;
+}
+
+.services-content {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.services-content:hover {
+    background-color: #18d26e;
+}
+
+.services-content:hover .icon-box {
+    background-color: #fff;
+    color: #18d26e;
+}
+
+.icon-box {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18d26e;
+    border-radius: 6px;
+    box-shadow: -8px -8px 0px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-box i {
+    font-size: 28px;
+}
+
+/* reponsive */
+  
+  /* tablet */
+@media (max-width: 991px) {
+    .services-item {
+        width: 50%;
+    }
+}
+
+  /* reponsive mobile */
+@media (max-width: 767px) {
+    .services-list {
+        flex-direction: column;
+    }
+
+    .services-item {
+        width: 100%;
+    }
+}
